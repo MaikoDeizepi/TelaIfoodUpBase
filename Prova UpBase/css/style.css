@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto');
+
+	body, p, span{
+		font-family: 'Roboto', sans-serif;
+   	
+	}
+
+	body.qrcode{
+		background-color: #282828;
+	}
+
+	*{
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+	}
+
+	html, body{
+		max-width: 100%;
+		overflow-x: hidden; 
+	}
+
+	a{
+		text-decoration: none;
+		color: gray;
+	}
+
+	img{
+		width: 100%;
+		height: auto;
+	}
+
+	
+		header{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		margin: 15px;
+		align-items: center;
+	}
+
+	header div.local{
+		display: flex;
+		align-items: center;
+		font-size: 14px;
+	}
+
+  section div.imgqrcode{
+
+    display: flex;
+    flex-direction: column;
+		align-items: center;
+		font-size: 14px;
+    color: white;
+    margin-top: 2cm;
+  } 
+
+  section div.quadrado{
+    margin-top: 50px;
+    width:0;
+    height:0;
+    border: 100px solid; 
+    border-color: white; 
+  }
+
+  section div.lanterna{
+    margin-top: 42px;
+    margin-left: 38px;
+    
+     }
+
+     section div.circulodalanterna{
+    margin-top: 50px;
+    border-radius:100%;
+    border:1px solid white;
+    width:100px;
+    height:100px;
+     
+       }
+
+    section div.fmapag{
+      margin-top: 130px;
+      color: red;
+      
+    }
+
+	
+	section#category div.category_type{
+		margin: 20px 10px;
+	}
+
+	section#category div.category_type a{
+		font-weight: 900;
+		margin-right: 10px;
+	}
+
+	section#category div.category_type a.active_category{
+		color: red;
+		display: inline-block;
+	}
+
+	section#category div.category_type a.active_category::after{
+		content: "";
+		display: block;
+		border: red 2px solid;
+		margin-top: 5px;
+	}
+
+	section#category div.categories{
+		display: flex;
+		flex-direction: row;
+		max-width: 100%;
+		overflow-x: auto; 
+		-ms-overflow-style: none; /* for Internet Explorer, Edge */
+    	scrollbar-width: none; /* for Firefox */
+	}
+
+	section#category div.categories::-webkit-scrollbar {
+    	display: none; /* for Chrome, Safari, and Opera */
+	}
+
+	section#category div.categories div.box_category{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		min-width: 100px;
+	}
+
+	section#category div.categories div.box_category img{
+		width: 50px;
+		height: 50px;
+		margin-bottom: 10px;
+	}
+
+	section#category div.categories div.box_category span{
+		font-size: 12px;
+		color: gray;
+	}
+
+	section#mercados div.row_mercados{
+		display: flex;
+		flex-direction: row;
+		max-height: 100%;
+		margin: 15px 0px 15px 15px;
+		overflow-x: auto; 
+		-ms-overflow-style: none; /* for Internet Explorer, Edge */
+    	scrollbar-width: none; /* for Firefox */
+	}
+
+	section#mercados div.row_mercados::-webkit-scrollbar {
+    	display: none; /* for Chrome, Safari, and Opera */
+	}
+
+	section#mercados div.row_mercados div.box_mercado{
+		display: flex;
+		flex-direction: column;
+		min-width: 152px;
+		padding: 20px 10px;
+		border: 1px solid #E8E8E8;
+		border-radius: 5px;
+		margin-right: 5px;
+	}
+
+	section#mercados div.row_mercados div.box_mercado img{
+		width: 30px;
+		margin: 0 0px 20px 15px;
+	}
+
+	section#mercados div.row_mercados div.box_mercado span{
+		font-size: 12px;
+	}
+
+	section#mercados div.row_mercados div.box_mercado span.tiny{
+		font-size: 8px;
+	}
+
+
+	section#ofertas{
+		display: flex;
+		flex-direction: row;
+		max-width: 100%;
+		margin: 20px 0px 20px 15px;
+		overflow-x: auto; 
+		-ms-overflow-style: none; /* for Internet Explorer, Edge */
+    	scrollbar-width: none; /* for Firefox */
+	}
+
+	section#ofertas::-webkit-scrollbar {
+    	display: none; /* for Chrome, Safari, and Opera */
+	}
+
+	section#ofertas img{
+		min-width: 250px;
+		border-radius: 10px;
+		margin-right: 10px;
+	}
+
+	div.dots{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		font-size: 10px;
+		color: gray;
+	}
+
+	footer.tabbar{
+		position: fixed;
+		bottom: 0;
+		width: 100%;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+		background-color: #fff;
+		padding: 10px 0;
+	}
+
+	footer.tabbar a.box_bar{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	footer.tabbar a.box_bar span.text_bar{
+		font-size: 10px;
+	}
+
+	.active_bar{
+		color: #000;
+	}
+
